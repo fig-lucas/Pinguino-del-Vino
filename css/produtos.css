@@ -1,14 +1,12 @@
-body{
-    
-    color: white;
-}
-
 main .content{
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
-    height: 70%;
-    width: 800px;
+    top: 4rem;
+    width: 70%;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
     
 }
 
@@ -17,26 +15,33 @@ main .all-box{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-    
+    row-gap: 20px;
     height: 100%;
+    
     
 
     & .box{
-        background-color: rgba(121, 130, 138, 0.327);
+        background-color: rgba(208, 217, 225, 0.993);
         border-radius: 10px;
         height: 300px;
-        width: 90%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+        & h3{
+            font-style: italic;
+        }
         
         
         & button{
             border-radius: 10px;
             border: none;
             padding: 2px 5px;
-            font-size: 12px;
+            font-size: 11px;
+            margin-top: 3px;
         }
         
         
@@ -48,3 +53,29 @@ main img{
     width: 150px;
     height: 225px;
 }
+
+/*BARRA DE FILTRAGEM*/
+form .ano{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & button{
+        width: 80px;
+    }
+}
+
+form hr{
+    width: 70%;
+}
+
+#btn-limpar{
+    width: 50px;
+}
+
+
