@@ -1,0 +1,41 @@
+
+/*MAIN*/
+main{
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+}
+
+main img{
+    width: 400px;
+    scale: 1.7;
+    padding-left: 60px;
+}
+
+main .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .texto-inicial{
+    width: 700px;
+    position: relative;
+    bottom: 40px;
+    
+
+    & h1{
+        font-size: 50px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+
+    & .apresentacao p{
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+
+}
