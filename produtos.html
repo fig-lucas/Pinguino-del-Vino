@@ -17,8 +17,12 @@
               <a href="produtos.html">
                   <li>Produtos</li>
               </a>
-              <li>Sobre</li>
-              <li>Fale Conosco</li>
+              <a href="#">
+                  <li>Sobre</li>
+              </a>
+              <a href="#">
+                  <li>Fale Conosco</li>
+              </a>
             </ul>
           </nav>
         </div>
@@ -30,14 +34,14 @@
             <div class="barra-pesquisa">
                 <form action="" id="vinho-formulario">
                     <div class="filtrar">
-                        <h3>Filtar</h3>
-                        <input type="text" placeholder="Pesquisar">
+                        <h3>Filtrar:</h3>
+                        <input type="text" placeholder="Pesquisar" id="pesquisa">
                         
                     </div>
                     <hr>
                     <div class="categorias">
                         <h3>Categorias</h3>
-                        <select name="" id="">
+                        <select name="" id="categorias">
                             <option value="">Selecione uma opção</option>
                             <option value="tinto">Tinto</option>
                             <option value="branco">Branco</option>
@@ -47,12 +51,13 @@
                     </div>
                     <hr>
                     <div class="ano">
-                        <h3>Idade</h3>
-                        <label for=""><input type="checkbox" name="10 " id=""> 10 Anos</label>
-                        <label for=""><input type="checkbox" name="10 " id=""> 15 Anos</label>
-                        <label for=""><input type="checkbox" name="10 " id=""> 20 Anos</label>
-                        <label for=""><input type="checkbox" name="10 " id=""> 30 Anos</label>
+                        <h3>Idade - Anos</h3>
+                        <label class="checkbox"><input type="checkbox" id=""><span></span> 10-15</label>
+                        <label class="checkbox"><input type="checkbox" id=""><span></span> 15-20</label>
+                        <label class="checkbox"><input type="checkbox" id=""><span></span> 20-30</label>
+                        <label class="checkbox"><input type="checkbox" id=""><span></span> 30-50</label>
                     </div>
+                    <hr>
                     
                     <button>Pesquisar</button>
                     <button type="reset" onclick="limparFormulario()" id="btn-limpar">Limpar</button>
@@ -126,6 +131,11 @@
         </div>
 
     </main>
+
+    <footer>
+        <p>© 2025 Pinguino del Vino, Todos os direitos reservados. </p>
+    </footer>
+
 
 
     <script src="js/produtos.js"></script>

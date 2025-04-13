@@ -33,6 +33,10 @@ header {
     grid-template-columns: 1fr 600px;
     gap: 100px;
     
+    & img{
+        transition: .3s;
+    }
+    
     & ul{
         display: flex;
         justify-content: end;
@@ -42,12 +46,45 @@ header {
         & a{
             text-decoration: none;
             color: black;
-        }
-
-        & li{
             cursor: pointer;
         }
+
+        
     }
 
     
+}
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    background-color: rgba(208, 217, 225, 0.993);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    
+}
+
+/*EFEITOS HEADER*/
+
+.header-container img:hover{
+    scale: 1.02;
+}
+
+.header-container li{
+    position: relative;
+    display: inline-block;
+}
+
+.header-container li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+.header-container li:hover::after{
+    width: 100%;
 }
