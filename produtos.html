@@ -52,20 +52,20 @@
                     <hr>
                     <div class="ano">
                         <h3>Idade - Anos</h3>
-                        <label class="checkbox"><input type="checkbox" id=""><span></span> 10-15</label>
-                        <label class="checkbox"><input type="checkbox" id=""><span></span> 15-20</label>
-                        <label class="checkbox"><input type="checkbox" id=""><span></span> 20-30</label>
-                        <label class="checkbox"><input type="checkbox" id=""><span></span> 30-50</label>
+                        <label class="checkbox"><input type="checkbox" id="" value="10-15"><span></span> 10-15</label>
+                        <label class="checkbox"><input type="checkbox" id="" value="15-20"><span></span> 15-20</label>
+                        <label class="checkbox"><input type="checkbox" id="" value="20-30"><span></span> 20-30</label>
+                        <label class="checkbox"><input type="checkbox" id="" value="30-50"><span></span> 30-50</label>
                     </div>
                     <hr>
                     
-                    <button>Pesquisar</button>
-                    <button type="reset" onclick="limparFormulario()" id="btn-limpar">Limpar</button>
+                    <button type="submit">Pesquisar</button>
+                    <button type="reset" id="btn-limpar">Limpar</button>
                 </form>
                 
             </div>
             <div class="all-box">
-                <div class="box">
+                <div class="box" data-categoria="tinto" data-idade="15-20" data-nome="quattro amici">
                     <div class="img-produto">
                         <img src="img/vinho1.png" alt="">
                     </div>
@@ -75,7 +75,7 @@
                     <button>Ver mais</button>
                 </div>
                
-                <div class="box">
+                <div class="box" data-categoria="branco" data-idade="20-30" data-nome="Vecchino Pinguino">
                     <div class="img-produto">
                         <img src="img/vinho_2.png" alt="">
                     </div>
