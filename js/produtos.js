@@ -1,3 +1,26 @@
+//MODAL//
+
+const caixas = document.querySelectorAll('.box')
+
+caixas.forEach(caixa => {
+    const verMais = caixa.querySelector('.verMais')
+    const dialog = caixa.querySelector('dialog')
+    const fechar = dialog.querySelector('.fechar')
+
+
+    verMais.addEventListener('click', () =>{
+        dialog.showModal()
+    })
+
+    fechar.addEventListener('click', () =>{
+        dialog.close()
+    })
+
+})
+
+
+
+//FILTRAGEM//
 document.addEventListener('DOMContentLoaded', () => {
     const formulario = document.getElementById('vinho-formulario');
 
