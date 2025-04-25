@@ -7,7 +7,7 @@ main {
 
 main img{
     width: 400px;
-    scale: 1.65;
+    scale: 1.8;
     padding-left: 60px;
 }
 
@@ -34,4 +34,87 @@ main .texto-inicial{
     }
 
 
+}
+
+.assinatura{
+    text-align: center;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+
+    & .left{
+        width: 680px;
+        
+        
+        & .beneficios{
+            margin-top: 30px;
+
+            & ul{
+                background-color: #333;
+                border-radius: 16px;
+                color: aliceblue;
+                padding: 10px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            }
+            
+
+            & li{
+                margin-bottom: 20px;
+                font-size: 18px;
+            }
+
+            & p{
+                margin-top: 30px;
+            }
+        }
+
+        & .finalizacao-assinatura{
+            margin-top: 30px;
+            font-size: 24px;
+        }
+        
+        & .titulo-assinatura p{
+            margin-top: 20px;
+            line-height: 32px;
+         
+        }
+    }
+
+    & .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
+    & h2{
+        font-size: 40px;
+    }
+
+    
+
+}
+
+.assinatura .btn{
+    margin-top: 40px;
+
+    & button{
+        border-radius: 16px;
+        padding: 15px;
+        width: 300px;
+        font-size: 20px;
+        border: none;
+        background-color: #ab3131;
+        color: aliceblue;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: .3s;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        animation: flutuar 3s ease-in-out infinite;
+    }
+
+    & button:hover{
+        background-color: #333;
+    }
 }
