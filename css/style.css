@@ -15,6 +15,7 @@ main img{
 
 main .content{
     display: flex;
+    justify-content: center;
     margin-top: 4rem;
 }
 
@@ -40,9 +41,8 @@ main .texto-inicial{
 
 .assinatura{
     text-align: center;
-    
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 100px;
 
     & .left{
@@ -132,3 +132,159 @@ main .texto-inicial{
     }
     
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    main {
+      max-width: 90%;
+    }
+  
+    .header-container {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+    }
+  
+    .header-container nav ul {
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+   
+  
+    main .content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 7rem;
+    }
+  
+    main img {
+      width: 100%;
+      scale: 1.2;
+      padding-left: 0;
+      top: 20px;
+    }
+  
+    main .texto-inicial {
+      width: 100%;
+  
+      & h1 {
+        font-size: 36px;
+      }
+  
+      & .apresentacao p {
+        font-size: 17px;
+      }
+    }
+  
+    .assinatura {
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+    }
+  
+    .assinatura .left,
+    .assinatura .right {
+      width: 100%;
+    }
+  
+    .assinatura h2 {
+      font-size: 32px;
+    }
+  
+    .assinatura .btn button {
+      width: 60%;
+      font-size: 18px;
+    }
+  
+    .beneficios ul {
+      font-size: 16px;
+    }
+  
+    footer {
+      font-size: 14px;
+      padding: 10px 0;
+    }
+  
+  }
+  
+
+@media (max-width: 768px) {
+
+    main {
+      max-width: 90%;
+    }
+  
+    .header-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .header-container nav ul {
+      align-items: center;
+      gap: 15px;
+      
+    }
+
+    .header-container nav ul li{
+        background-color: rgba(130, 134, 138, 0.353);
+        border-radius: 10px;
+        padding: 0 5px;
+        color: #333;
+    }
+  
+    main .content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 7rem;
+    }
+  
+    main img {
+      scale: 1;
+      width: 100%;
+      padding-left: 0;
+      top: 20px;
+    }
+  
+    main .texto-inicial {
+      width: 100%;
+  
+      & h1 {
+        font-size: 32px;
+      }
+  
+      & .apresentacao p {
+        font-size: 16px;
+      }
+    }
+  
+    .assinatura {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      text-align: center;
+    }
+  
+    .assinatura .left,
+    .assinatura .right {
+      width: 100%;
+    }
+  
+    .assinatura h2 {
+      font-size: 28px;
+    }
+  
+    .assinatura .btn button {
+      width: 80%;
+      font-size: 18px;
+    }
+  
+  }
+  

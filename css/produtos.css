@@ -1,24 +1,24 @@
 /*MAIN*/
 
-main .content{
+main .content {
     max-width: 70%;
-    margin: 70px auto; 
+    margin: 70px auto;
     display: grid;
     grid-template-columns: 200px 1fr;
-    
+
 }
 
-main .all-box{
+main .all-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-content: start;
     row-gap: 20px;
     height: 100vh;
-    
-    
 
-    & .box{
+
+
+    & .box {
         background-color: rgba(208, 217, 225, 0.993);
         border-radius: 10px;
         height: 350px;
@@ -29,55 +29,56 @@ main .all-box{
         align-items: center;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
-        & h3{
+        & h3 {
             font-style: italic;
         }
-   
+
     }
 }
 
 /* IMAGEM DOS VINHOS*/
-main img{
+main img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.267)) ;
+    filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.267));
 }
 
-main i{
+main i {
     font-size: 23px;
-    
+
 }
 
 /*BARRA DE FILTRAGEM*/
-form .ano{
+form .ano {
     display: flex;
     flex-direction: column;
-    
-    & label{
+
+    & label {
         letter-spacing: 1px;
     }
-    
+
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 
-    & button{
+    & button {
         width: 80px;
         border: 1px solid black;
         background-color: #333;
         color: white;
     }
 
-    & button:hover{
+    & button:hover {
         background-color: aliceblue;
         color: black;
     }
 
-    & input, select{
+    & input,
+    select {
         border: 1px solid black;
         border-radius: 8px;
         letter-spacing: 1px;
@@ -85,34 +86,37 @@ form{
         background-color: #333;
         color: white;
 
-        
-        
+
+
     }
-    & input::placeholder{
+
+    & input::placeholder {
         color: white;
     }
-    
-    & #categorias, #pesquisa{
+
+    & #categorias,
+    #pesquisa {
         width: 170px;
     }
 
-    
-    
+
+
 }
 
 /*LINHA DECORAÇAO*/
-form hr{
+form hr {
     width: 70%;
 }
 
 /*BOTOES GERAIS*/
-#btn-limpar{
+#btn-limpar {
     width: 60px;
 }
 
-button{
+button {
     background-color: aliceblue;
-    border: none; /* ou qualquer cor que combine com seu tema */
+    border: none;
+    /* ou qualquer cor que combine com seu tema */
     color: #333;
     border-radius: 8px;
     cursor: pointer;
@@ -123,20 +127,20 @@ button{
     padding: 2px 5px;
     font-size: 11px;
     margin-top: 3px;
-    
+
 }
 
-button:hover{
+button:hover {
     background-color: #333;
     color: white;
     transform: scale(1.05);
-      
+
 }
 
 
 /*CHECKBOX*/
 
-.checkbox input{
+.checkbox input {
     display: none;
 }
 
@@ -151,11 +155,11 @@ button:hover{
     position: relative;
 }
 
-.checkbox input:checked + span {
+.checkbox input:checked+span {
     background-color: #333;
 }
 
-.checkbox input:checked + span::after{
+.checkbox input:checked+span::after {
     content: '';
     position: absolute;
     top: 2px;
@@ -170,8 +174,8 @@ button:hover{
 
 /*DIALOG*/
 
-dialog{
-    
+dialog {
+
     margin: 0 auto;
     position: relative;
     top: 50%;
@@ -183,38 +187,171 @@ dialog{
     background-color: aliceblue;
     animation: modal .5s ease;
 
-    & img{
+    & img {
         width: 250px;
         height: 250px;
         object-fit: contain;
     }
-   
-  
 
-    & button{
+
+
+    & button {
         background-color: #333;
         color: aliceblue;
     }
 
-    & button:hover{
+    & button:hover {
         background-color: aliceblue;
         color: #333;
     }
 
-    
+
 }
 
 
 
 @keyframes modal {
-    0%{
+    0% {
         opacity: 0;
         position: absolute;
         top: 200px;
     }
 
-    100%{
+    100% {
         opacity: 1;
-        
+
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main .content {
+        max-width: 90%;
+        min-height: 90vh;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .header-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+    }
+
+    .header-container nav ul {
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .barra-pesquisa {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        & button {
+            height: 100px;
+
+        }
+    }
+
+    form hr {
+        display: none;
+    }
+
+
+    main .all-box {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        gap: 20px;
+    }
+
+    main .all-box .box {
+        width: 90%;
+        height: 320px;
+    }
+
+    .nome-produto h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    dialog {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .header-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header-container nav ul {
+        align-items: center;
+        gap: 15px;
+
+    }
+
+    .header-container nav ul li {
+        background-color: rgba(130, 134, 138, 0.353);
+        border-radius: 10px;
+        padding: 0 5px;
+        color: #333;
+    }
+
+
+    main .content {
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+        margin-top: 7rem;
+        gap: 20px;
+
+    }
+
+    .barra-pesquisa {
+        display: none;
+    }
+
+
+    form #categorias,
+    form #pesquisa {
+        width: 100%;
+    }
+
+    main .all-box {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    main .all-box .box {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .box img {
+        height: auto;
+        max-height: 200px;
+    }
+
+    dialog {
+        width: 90%;
     }
 }
