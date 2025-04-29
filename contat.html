@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/contato.css">
+   <link rel="stylesheet" href="css/contato.css">
+    <link rel="shortcut icon" href="img/vinho.ico.ico" type="image/x-icon">
     <title>contato</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
                         <li>Contato</li>
                     </a>
                     <a href="clubeDeAssinatura.html">
-                        <li>Club de Assinatura</li>
+                        <li>Clube de Assinatura</li>
                       </a>
                     <a href="novidade.html">
                         <li>Novidades</li>
@@ -34,26 +35,29 @@
         </div>
     </header>
 
+
+    <h1>PÁGINA DE CONTATO</h1>
+
 <form action="">
-    <fieldset>
-        <div>
-            <label for="">Nome</label>
-            <input type="text" name="nome" id="nome" placeholder="digite aqui">
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for=""><strong>Nome:</strong></label>
+            <input type="text" name="nome" id="nome" placeholder="Digite aqui" required>
         </div>
         
-        <div>
-            <label for="">Sobrenome</label>
-            <input type="text" name="sobrenome" id="sobrenome" placeholder="digite aqui">
+        <div class="campo">
+            <label for=""><strong>Sobrenome:</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite aqui" required>
         </div>
     
-        <div>
-            <label for="">Email</label>
-            <input type="email" name="email" id="email" placeholder="digite aqui">
+        <div class="campo">
+            <label for=""><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" placeholder="Digite aqui" required>
         </div>
         </fieldset>
 
-    <div>
-        <label for="">Faz parte do clube de assinatura?</label> <br>
+    <div class="campo">
+        <label for=""><strong>Faz parte do clube de assinatura?</strong> </label> <br>
         <p>
             <label for="">
                 <input type="radio" name="sim" value="sim">Sim
@@ -64,22 +68,24 @@
                 <input type="radio" name="nao" value="nao">Não
             </label>
         </p>
-    </div>
-        <label for="">Motivo do Contato</label>
-        <textarea name="contato" id="contato" style="26em" placeholder="digite aqui"></textarea>
+    </div class="campo">
+        <label for=""><strong>Motivo do Contato:</strong></label>
+        <textarea name="contato" id="contato" placeholder="Digite aqui"></textarea>
     <div>
-        <button type="button">enviar</button>
-       
+      <button class="butao"><a href="contato.2.html">Enviar</a></button>
     </div>
 </form>
 
-<h3>encontre nos também nos portais abaixo:</h3>
-
-<div class="imagem">
-    <a href="http:\\facebook.com"><img src="img/face.png" alt=""></a>
-</div>
+<h3> Nos encontre também nos portais abaixo:</h3>
 
 
+    <div class="imagem">
+        <a href="http:\facebook.com" target="_blank"><img src="img/face.png"></a>
+    
+        <div class="flavinho"><a href="http:\instagram.com" target="_blank"> <img src="img/v982-d3-04.jpg" alt=""> </a></div>
+    </div>
+
+    
  <footer>
         <p>© 2025 Pinguino del Vino, Todos os direitos reservados. </p>
     </footer> 

@@ -1,0 +1,72 @@
+.imagem img {
+    width: 100px;
+    height: 100px;
+}
+.flavinho img{
+    width: 80px;
+    height: 80px;
+}
+.imagem {
+    display: flex;
+}
+h1 {
+    text-align: center;
+    color: #56131E;
+    margin-top: 20px;
+}
+h3 {
+    margin-top: 30px;
+}
+form {
+    margin-top: 30px;
+}
+fieldset {
+    border: 0;
+}
+.grupo {
+  justify-content: center;
+}
+input, select, textarea, button {
+    border-radius: 5px;
+}
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: #56131E;
+    display: block;
+}
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid black;
+    box-shadow: 2px, 2px, 2px rgb(0, 0, 0, 0.2);
+    display: block;
+}
+.campo select option{
+    padding-right: 1em;
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: beige;
+}
+.butao {
+    font-size: 1.2em;
+    background: #56131E;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+    top: 90%;
+    margin-top: 30px;
+}
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}

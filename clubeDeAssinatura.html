@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/clubAssinatura.css">
+  <link rel="shortcut icon" href="img/vinho.ico.ico" type="image/x-icon">
   <title>Document</title>
 </head>
 
@@ -25,10 +26,11 @@
             <li>Contato</li>
           </a>
           <a href="clubeDeAssinatura.html">
-            <li>Club de Assinatura</li>
+            <li>Clube de Assinatura</li>
           </a>
           <a href="novidade.html">
             <li>Novidades</li>
+          </a>
         </ul>
       </nav>
     </div>
@@ -36,22 +38,19 @@
 
 
   <section>
-    <div class="titulo">
-      <h1>Club de Assinatura</h1>
+      <h1>Clube de Assinatura:</h1>
+
+    <div class="form">
+      <form action="usuario.php" method="post">
+        <label for="nome"><strong>Nome:</strong></label>
+        <input type="text" name="nome" id="idnome">
+        <label for="sobrenome"><strong>Sobrenome: </strong></label>
+        <input type="text" name="sobrenome" id="idsobrenome">
+        <label for="email"><strong>Email:</strong></label>
+        <input type="email" name="email" id="idemail">
+        <input type="submit" value="Enviar">
+              </form>
     </div>
-
-    <form action="usuario.php" method="post">
-      <label for="nome">Nome</label>
-      <input type="text" name="nome" id="idnome">
-
-      <label for="sobrenome">Sobrenome</label>
-      <input type="text" name="sobrenome" id="idsobrenome">
-
-      <label for="email">Email</label>
-      <input type="email" name="email" id="idemail">
-
-      <input type="submit" value="Enviar">
-    </form>
   </section>
 
   <footer>
