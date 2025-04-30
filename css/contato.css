@@ -96,6 +96,7 @@ fieldset.grupo .campo {
     margin-top: 30px;
     transition: .3s;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 button:hover{

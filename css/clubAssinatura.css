@@ -1,24 +1,141 @@
+section {
+    height: 80vh;
+    margin-top: 4rem;
+}
+
 h1 {
     text-align: center;
     margin-top: 20px;
-    color: #56131E
+    color: #333
 }
+
 .form {
     margin-top: 30px;
-    color: #56131E;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    & .enviar {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
-input, select, textarea, button {
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgba(208, 217, 225, 0.993);
+    padding: 20px;
+    border-radius: 16px;
+    width: 400px;
+}
+
+input,
+select,
+textarea,
+button {
     border-radius: 5px;
     padding: 0.2em;
     border: 1px solid black;
     box-shadow: 2px, 2px, 2px rgb(0, 0, 0, 0.2);
 }
-input{
+
+input {
     margin-right: 15px;
 }
-label{
+
+label {
     margin-left: 10px;
 }
+
+.botao {
+    font-size: 1.2em;
+    background: #56131E;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+    top: 90%;
+    margin-top: 30px;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.botao:hover {
+    cursor: pointer;
+    background-color: #333;
+    scale: 1.05;
+}
+
+
+
+
+
+
+
+    @media (max-width: 1024px) {
+        section {
+            height: 80vh;
+            padding: 2rem 1rem;
+        }
+
+        .form {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        form {
+            width: 90%;
+            max-width: 500px;
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .botao {
+            font-size: 1rem;
+            padding: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        label {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            margin-left: 0;
+        }
+
+        .enviar {
+            margin-top: 1.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        form {
+            padding: 15px;
+        }
+
+        .botao {
+            width: 100%;
+        }
+
+        footer p {
+            text-align: center;
+            font-size: 14px;
+            padding: 1px;
+        }
+    }
