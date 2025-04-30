@@ -12,5 +12,5 @@ $email = $_POST['email'];
 $sql = "INSERT INTO usuario (nome, sobrenome, email) VALUES ('$nome', '$sobrenome', '$email')";
 $conn->query($sql);
 
-echo "assinatura feita com sucesso!!!"
+echo "assinatura feita com sucesso!!"
 ?>
