@@ -126,3 +126,43 @@ main, section{
 }
 
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    .header-container {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+    }
+  
+    .header-container nav ul {
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+}    
+
+@media (max-width: 768px) {
+
+    
+
+    .header-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      text-align: center;
+    }
+  
+    .header-container nav ul {
+      align-items: center;
+      gap: 15px;
+      
+    }
+
+    .header-container nav ul{
+        background-color: rgba(208, 217, 225, 0.993);
+        border-radius: 10px;
+        padding: 0 5px;
+        color: #333;
+    }
+}

@@ -232,20 +232,6 @@ dialog {
         gap: 40px;
     }
 
-    .header-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 20px;
-        text-align: center;
-        display: flex;
-    }
-
-    .header-container nav ul {
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
     .barra-pesquisa {
         width: 100%;
         display: flex;
@@ -294,27 +280,6 @@ dialog {
 
 
 @media (max-width: 768px) {
-
-    .header-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .header-container nav ul {
-        align-items: center;
-        gap: 15px;
-
-    }
-
-    .header-container nav ul li {
-        background-color: rgba(130, 134, 138, 0.353);
-        border-radius: 10px;
-        padding: 0 5px;
-        color: #333;
-    }
-
 
     main .content {
         display: flex;

@@ -1,6 +1,24 @@
-.imagem img {
-    width: 100px;
-    height: 100px;
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    color: #333;
+}
+
+.redes{
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    
+    & i{
+        color: #333;
+    }
 }
 .flavinho img{
     width: 80px;
@@ -11,14 +29,17 @@
 }
 h1 {
     text-align: center;
-    color: #56131E;
-    margin-top: 20px;
+    color: #333;
+    margin-top: 4rem;
 }
 h3 {
     margin-top: 30px;
 }
 form {
     margin-top: 30px;
+    background-color: rgba(208, 217, 225, 0.993);
+    padding: 20px;
+    border-radius: 16px;
 }
 fieldset {
     border: 0;
@@ -28,14 +49,16 @@ fieldset {
 }
 input, select, textarea, button {
     border-radius: 5px;
+    
 }
 .campo {
-    margin-bottom: 1em;
+    margin: 2rem 0;
+    text-align: center;
 }
 
 .campo label{
     margin-bottom: 0.2em;
-    color: #56131E;
+    color: #333;
     display: block;
 }
 fieldset.grupo .campo {
@@ -54,6 +77,12 @@ fieldset.grupo .campo {
 .campo input:focus, .campo select:focus, .campo textarea:focus{
     background: beige;
 }
+
+.btn{
+    margin-top: 20px;
+    text-align: center;
+}
+
 .butao {
     font-size: 1.2em;
     background: #56131E;
@@ -65,8 +94,136 @@ fieldset.grupo .campo {
     text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
     top: 90%;
     margin-top: 30px;
+    transition: .3s;
+    border-radius: 10px;
 }
+
+button:hover{
+   
+    background-color: #333;
+    scale: 1.05;
+}
+
 a {
     text-decoration: none;
     color: antiquewhite;
 }
+
+.motivo{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+
+    & textarea{
+        height: 100px;
+        resize: none;
+        padding: 5px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    
+    main {
+        padding: 0 15px;
+        height: auto;
+    }
+    
+    form {
+      width: 90%;
+    }
+  
+    fieldset.grupo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    fieldset.grupo .campo {
+      float: none;
+      width: 80%;
+      margin-right: 0;
+    }
+  
+    .campo input[type="text"],
+    .campo input[type="email"],
+    .motivo textarea {
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    .motivo textarea {
+      height: 120px;
+    }
+  
+    h1 {
+        margin-top: 7rem;
+    }
+  
+    h3 {
+      text-align: center;
+    }
+  
+    .btn {
+      margin-bottom: 2rem;
+    }
+  
+    .redes {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    
+    main {
+      padding: 0 15px;
+      height: auto;
+    }
+
+    form {
+      padding: 15px;
+      font-size: 15px;
+    }
+  
+    .campo {
+      margin: 1.2rem 0;
+    }
+  
+    .campo label,
+    .motivo label {
+      font-size: 16px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      font-size: 14px;
+    }
+  
+    .butao {
+      font-size: 1rem;
+      padding: 0.4em 1em;
+    }
+  
+    h1 {
+      font-size: 1.7rem;
+      margin-top: 7rem;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  
+    .redes {
+      font-size: 26px;
+      gap: 15px;
+      margin-top: 1rem;
+    }
+  
+    footer p {
+      font-size: 14px;
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+  

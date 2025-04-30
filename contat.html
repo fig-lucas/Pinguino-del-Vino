@@ -25,7 +25,7 @@
                         <li>Contato</li>
                     </a>
                     <a href="clubeDeAssinatura.html">
-                        <li>Clube de Assinatura</li>
+                        <li>Clube</li>
                       </a>
                     <a href="novidade.html">
                         <li>Novidades</li>
@@ -38,52 +38,56 @@
 
     <h1>PÁGINA DE CONTATO</h1>
 
-<form action="">
-    <fieldset class="grupo">
-        <div class="campo">
-            <label for=""><strong>Nome:</strong></label>
-            <input type="text" name="nome" id="nome" placeholder="Digite aqui" required>
-        </div>
-        
-        <div class="campo">
-            <label for=""><strong>Sobrenome:</strong></label>
-            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite aqui" required>
-        </div>
+<main>
+    <form action="">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for=""><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Digite aqui" required>
+            </div>
+    
+            <div class="campo">
+                <label for=""><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite aqui" required>
+            </div>
+    
+            <div class="campo">
+                <label for=""><strong>Email:</strong></label>
+                <input type="email" name="email" id="email" placeholder="Digite aqui" required>
+            </div>
+            </fieldset>
     
         <div class="campo">
-            <label for=""><strong>Email:</strong></label>
-            <input type="email" name="email" id="email" placeholder="Digite aqui" required>
+            <label for=""><strong>Faz parte do clube de assinatura?</strong> </label> <br>
+            <p>
+                <label for="">
+                    <input type="radio" name="radio" value="sim">Sim
+                </label>
+            </p>
+            <p>
+                <label for="">
+                    <input type="radio" name="radio" value="nao">Não
+                </label>
+            </p>
+        </div class="campo">
+            <div class="motivo">
+                <label for=""><strong>Motivo do Contato:</strong></label>
+                <textarea name="contato" id="contato" placeholder="Digite aqui"></textarea>
+            </div>
+        <div class="btn">
+          <button class="butao"><a href="contato.2.html">Enviar</a></button>
         </div>
-        </fieldset>
-
-    <div class="campo">
-        <label for=""><strong>Faz parte do clube de assinatura?</strong> </label> <br>
-        <p>
-            <label for="">
-                <input type="radio" name="sim" value="sim">Sim
-            </label>
-        </p>
-        <p>
-            <label for="">
-                <input type="radio" name="nao" value="nao">Não
-            </label>
-        </p>
-    </div class="campo">
-        <label for=""><strong>Motivo do Contato:</strong></label>
-        <textarea name="contato" id="contato" placeholder="Digite aqui"></textarea>
-    <div>
-      <button class="butao"><a href="contato.2.html">Enviar</a></button>
-    </div>
-</form>
-
-<h3> Nos encontre também nos portais abaixo:</h3>
-
-
-    <div class="imagem">
-        <a href="http:\facebook.com" target="_blank"><img src="img/face.png"></a>
+    </form>
     
-        <div class="flavinho"><a href="http:\instagram.com" target="_blank"> <img src="img/v982-d3-04.jpg" alt=""> </a></div>
-    </div>
+    <h3> Nos encontre também nos portais abaixo:</h3>
+    
+    
+        <div class="redes">
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+    
+            <div class="flavinho"><a href="https://instagram.com" target="_blank"> <i class="bi bi-instagram"></i> </a></div>
+        </div>
+</main>
 
     
  <footer>
